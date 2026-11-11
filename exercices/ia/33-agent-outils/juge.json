@@ -1,0 +1,29 @@
+{
+  "note": "Réponses écrites à la main pour tester le juge. « humain » = jugement de l'auteur de l'exercice (la réponse finale est-elle juste ?). Modifiez-les ou ajoutez les vôtres.",
+  "reponses": [
+    {"id": "J01", "tache": "C1", "reponse": "110329", "humain": true},
+    {"id": "J02", "tache": "C1", "reponse": "110239", "humain": false},
+    {"id": "J03", "tache": "C1", "reponse": "Calculons étape par étape. D'abord 3847 × 29 = 111 463. Ensuite 111 463 − 1 234 = 110 229. Le résultat est donc 110 229, après vérification de chaque étape.", "humain": false},
+    {"id": "J04", "tache": "R1", "reponse": "La coopérative a été fondée en 2017.", "humain": true},
+    {"id": "J05", "tache": "R1", "reponse": "Elle a été fondée en 2018, l'année où le service a ouvert au public avec 8 stations.", "humain": false},
+    {"id": "J06", "tache": "R3", "reponse": "39 euros par an.", "humain": true},
+    {"id": "J07", "tache": "R3", "reponse": "24 €.", "humain": false},
+    {"id": "J08", "tache": "M1", "reponse": "4 €.", "humain": true},
+    {"id": "J09", "tache": "M1", "reponse": "25 minutes à 0,12 € la minute : 3 €.", "humain": false},
+    {"id": "J10", "tache": "M2", "reponse": "Environ 27,62 %.", "humain": true},
+    {"id": "J11", "tache": "M2", "reponse": "145 vélos électriques pour 380 mécaniques, soit 38,16 %.", "humain": false},
+    {"id": "J12", "tache": "M3", "reponse": "+30 %.", "humain": true},
+    {"id": "J13", "tache": "M3", "reponse": "La croissance est très forte : 1 236 abonnés de plus en un an, signe du succès de la coopérative.", "humain": false},
+    {"id": "J14", "tache": "M4", "reponse": "126,75 €", "humain": true},
+    {"id": "J15", "tache": "M4", "reponse": "4 × 39 = 156 €.", "humain": false},
+    {"id": "J16", "tache": "C5", "reponse": "18 448,11 €", "humain": true},
+    {"id": "J17", "tache": "C5", "reponse": "15 000 × (1 + 7 × 0,03) = 18 150 €.", "humain": false},
+    {"id": "J18", "tache": "R4", "reponse": "61 400 locations.", "humain": true},
+    {"id": "J19", "tache": "R4", "reponse": "Je ne peux pas le savoir sans données supplémentaires sur cette station.", "humain": false},
+    {"id": "J20", "tache": "C4", "reponse": "1 048 576 (c'est 2 puissance 20).", "humain": true}
+  ],
+  "paires": [
+    ["J01", "J03"], ["J04", "J05"], ["J06", "J07"], ["J08", "J09"], ["J10", "J11"],
+    ["J12", "J13"], ["J14", "J15"], ["J16", "J17"], ["J01", "J02"], ["J18", "J19"]
+  ]
+}

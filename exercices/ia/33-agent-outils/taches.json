@@ -1,0 +1,22 @@
+[
+  {"id": "C1", "categorie": "calcul", "question": "Combien font 3847 × 29 − 1234 ?", "attendu": 110329},
+  {"id": "C2", "categorie": "calcul", "question": "Combien font 17,5 % de 2384 ?", "attendu": 417.2},
+  {"id": "C3", "categorie": "calcul", "question": "Combien font 98765 divisé par 37, arrondi à deux décimales ?", "attendu": 2669.32},
+  {"id": "C4", "categorie": "calcul", "question": "Combien vaut 2 puissance 20 ?", "attendu": 1048576},
+  {"id": "C5", "categorie": "calcul", "question": "On place 15 000 euros à 3 % par an, intérêts composés, pendant 7 ans. Quel est le capital final, arrondi au centime ?", "attendu": 18448.11},
+  {"id": "C6", "categorie": "calcul", "question": "Combien font (1234 + 5678) × 3 − 999 ?", "attendu": 19737},
+  {"id": "R1", "categorie": "recherche", "question": "En quelle année la coopérative Roulevent a-t-elle été fondée ?", "attendu": 2017},
+  {"id": "R2", "categorie": "recherche", "question": "Combien de stations le réseau Roulevent compte-t-il fin 2024 ?", "attendu": 43},
+  {"id": "R3", "categorie": "recherche", "question": "Combien coûte l'abonnement annuel Roulevent, en euros, au tarif normal ?", "attendu": 39},
+  {"id": "R4", "categorie": "recherche", "question": "Combien de locations la station Halle aux Grains a-t-elle enregistrées en 2024 ?", "attendu": 61400},
+  {"id": "R5", "categorie": "recherche", "question": "Quelle est l'autonomie, en kilomètres, d'un vélo électrique Roulevent avec une batterie pleine ?", "attendu": 62},
+  {"id": "R6", "categorie": "recherche", "question": "Quel est le montant, en euros, de la subvention versée par la ville de Corvenne à Roulevent en 2024 ?", "attendu": 480000},
+  {"id": "R7", "categorie": "recherche", "question": "Combien Roulevent comptait-elle d'abonnés au 31 décembre 2023 ?", "attendu": 4120},
+  {"id": "M1", "categorie": "composée", "question": "Sans abonnement, combien coûte, en euros, une location Roulevent de 25 minutes en vélo électrique ?", "attendu": 4.0},
+  {"id": "M2", "categorie": "composée", "question": "Quel pourcentage de la flotte Roulevent fin 2024 est constitué de vélos électriques ? Arrondis à deux décimales.", "attendu": 27.62},
+  {"id": "M3", "categorie": "composée", "question": "De combien de pour cent le nombre d'abonnés Roulevent a-t-il augmenté entre fin 2023 et fin 2024 ?", "attendu": 30.0},
+  {"id": "M4", "categorie": "composée", "question": "Un foyer prend 4 abonnements annuels Roulevent au tarif normal, avec le tarif famille. Combien paie-t-il au total, en euros ?", "attendu": 126.75},
+  {"id": "M5", "categorie": "composée", "question": "En 2024, combien de kilomètres les vélos Roulevent ont-ils parcourus en moyenne par abonné (abonnés au 31 décembre 2024) ? Arrondis à deux décimales.", "attendu": 343.54},
+  {"id": "M6", "categorie": "composée", "question": "Quelle part, en pour cent, du budget 2024 de Roulevent la subvention de la ville représente-t-elle ? Arrondis à deux décimales.", "attendu": 38.1},
+  {"id": "M7", "categorie": "composée", "question": "Combien coûterait, en euros, le remplacement de la batterie de tous les vélos électriques de la flotte Roulevent fin 2024 ?", "attendu": 59450}
+]

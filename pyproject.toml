@@ -1,0 +1,59 @@
+# Projet Python unique : exercices du parcours IA (exercices/ia/) et notebooks des maths
+# (notebooks/maths/). Toute modification : `uv lock`, puis `make lock-check`.
+#
+# Les dépendances communes (numpy, matplotlib, marimo, sympy) suffisent aux notebooks des
+# maths ; le groupe « ia » (PyTorch, scikit-learn…) et les groupes rl, nlp et misc servent
+# aux exercices du parcours IA. `make install` installe tout, `make install-maths` seulement
+# le nécessaire aux notebooks des maths.
+[project]
+name = "laclasse-pratique"
+version = "0.1.0"
+description = "Exercices Python et notebooks marimo des parcours « Les maths, du collège à l’IA » et « Mécanismes de l’IA »"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "numpy>=2.5",
+  "matplotlib>=3.11",
+  "marimo>=0.25",
+  "sympy>=1.14",
+]
+
+[dependency-groups]
+ia   = ["torch>=2.14", "torchvision>=0.29", "scikit-learn>=1.9", "tqdm>=4.70",
+        # Téléchargement de CIFAR-10 depuis le Hub (fichiers parquet)
+        "huggingface-hub>=1.3", "pyarrow>=21"]
+rl   = ["gymnasium[box2d,classic-control]>=1.4", "stable-baselines3>=2.9"]
+nlp  = ["tiktoken>=0.14", "datasets>=5.1", "sentence-transformers>=6.1",
+        "faiss-cpu>=1.15", "bm25s>=0.3", "ollama>=0.6"]
+misc = ["networkx>=3.7", "shap>=0.53"]
+dev  = ["ruff>=0.17", "pytest>=9.1", "nbformat>=5.11"]
+
+[tool.uv]
+default-groups = "all"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+# Paquet importable des exercices IA : ia_commun (src/ia_commun/). Celui des notebooks des
+# maths, math_commun/, n’est pas installé : le Makefile place la racine du dépôt dans
+# PYTHONPATH (pytest aussi, voir pythonpath ci-dessous).
+module-name = "ia_commun"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+markers = [
+  "reseau: test qui a besoin d’Internet (désactivé par défaut, lancer avec -m reseau)",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint.per-file-ignores]
+# marimo : la dernière expression d’une cellule est affichée (idiome voulu)
+"exercices/**/*.py" = ["B018", "C408"]
+"notebooks/**/notebook.py" = ["B018"]

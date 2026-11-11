@@ -1,0 +1,18 @@
+{
+  "zero_shot": {
+    "nom brut": 0.362962962962963,
+    "un gabarit": 0.4603703703703704,
+    "3 gabarits": 0.472962962962963,
+    "français": 0.29648148148148146
+  },
+  "sonde": {
+    "1 par classe": 0.5753703703703704,
+    "4 par classe": 0.7801234567901235,
+    "16 par classe": 0.8769753086419753,
+    "tout le jeu": 0.9655555555555555
+  },
+  "reglage_fin": 0.9803703703703703,
+  "duree_reglage_fin_s": 304.715781625011,
+  "cifar_avant": 0.9345,
+  "cifar_apres": 0.821
+}

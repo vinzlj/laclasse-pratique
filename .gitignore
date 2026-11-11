@@ -1,0 +1,29 @@
+# Données téléchargées (MNIST, CIFAR-10, TinyShakespeare, modèles Hugging Face…), caches et
+# checkpoints : data/ à la racine, jamais versionné.
+/data/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+
+# Figures et résultats du mode smoke (le run complet, lui, est versionné pour comparaison)
+**/figures/*-smoke.*
+
+# Python, uv, marimo
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+__marimo__/
+.marimo/
+.ipynb_checkpoints/
+
+# Système et outils
+.DS_Store
+.env
+.env.*
